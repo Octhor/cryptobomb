@@ -12,7 +12,8 @@ time.sleep(2)
 #loop 30min (add random time to avoid getting detected)
 #The script was made with my screen in mind, didnt test it in a normal monitor.
 #some twist with the numbers may be necessary, it will be flagged as SCREEN POSITION to
-
+#If the buttons dont work, try taking a new print of them.
+#The browser used was chrome, common theme(white)
 
 #Function to screen in the heroes page
 def move_mouse_clicked(x,y):
