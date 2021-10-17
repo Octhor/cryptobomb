@@ -10,16 +10,17 @@ starter = int(0)
 time.sleep(2)
 
 #loop 30min (add random time to avoid getting detected)
-
+#The script was made with my screen in mind, didnt test it in a normal monitor.
+#some twist with the numbers may be necessary, it will be flagged as SCREEN POSITION to
 
 
 #Function to screen in the heroes page
 def move_mouse_clicked(x,y):
     for i in range(2):
-        win32api.SetCursorPos((x-400,y))
+        win32api.SetCursorPos((x-400,y)) #SCREEN POSITION
         print("mouse moved")
         time.sleep(0.1)
-        pyautogui.dragTo(x-400, y-340, 1, button='left')
+        pyautogui.dragTo(x-400, y-340, 1, button='left')    #SCREEN POSITION
 #Main
 while keyboard.is_pressed('q') == False and starter == 0:
     #reload page to start the loop
@@ -100,7 +101,7 @@ while keyboard.is_pressed('q') == False and starter == 0:
             print("Adventure button position: X:", treasure_Button_x, "Y:", treasure_Button_y)
             pyautogui.moveTo(treasure_Button_x, treasure_Button_y)
             pyautogui.click()
-    #Wait one hour to rerun and make everyone go to work again
+    #Wait 27 to 30min to rerun and make everyone go to work again
     time.sleep(randint(1500, 1650))
 
 
