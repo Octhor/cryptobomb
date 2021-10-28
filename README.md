@@ -7,14 +7,14 @@ Based in python 3.9.7, should work in anything below 3.10 and above 3.
 
 Libs to install(just use pip install):
 
-from PIL.ImageOps import grayscale
-pyautogui
-time
-keyboard
-numpy
-random
-get_window
-opencv
+- from PIL.ImageOps import grayscale
+- pyautogui
+- time
+- keyboard
+- numpy
+- random
+- get_window
+- opencv
 TODO
 
 Add a "New map function"
