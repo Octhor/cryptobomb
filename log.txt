@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "d:\Backup\Trabalho\OpenCV\Bombcrypto decepticon\set_window.py", line 40, in set_browser
+    cW.find_window_regex(name)
+  File "d:\Backup\Trabalho\OpenCV\Bombcrypto decepticon\set_window.py", line 19, in find_window_regex
+    win32gui.EnumWindows(self._window_enum_callback, regex)
+  File "d:\Backup\Trabalho\OpenCV\Bombcrypto decepticon\set_window.py", line 15, in _window_enum_callback
+    if self._hwnd is None and re.match(regex, str(win32gui.GetWindowText(hwnd))) is not None:
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python39\lib\re.py", line 191, in match
+    return _compile(pattern, flags).match(string)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python39\lib\re.py", line 294, in _compile
+    return _cache[type(pattern), pattern, flags]
+TypeError: unhashable type: 'Win32Window'
